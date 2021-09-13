@@ -51,6 +51,7 @@ namespace controlePagamentos
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.Relatorio.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -63,12 +64,11 @@ namespace controlePagamentos
             this.Relatorio.Controls.Add(this.tabPage1);
             this.Relatorio.Controls.Add(this.tabPage2);
             this.Relatorio.Controls.Add(this.tabPage3);
-            this.Relatorio.Location = new System.Drawing.Point(0, 0);
+            this.Relatorio.Location = new System.Drawing.Point(-3, 0);
             this.Relatorio.Name = "Relatorio";
             this.Relatorio.SelectedIndex = 0;
-            this.Relatorio.Size = new System.Drawing.Size(570, 272);
+            this.Relatorio.Size = new System.Drawing.Size(636, 272);
             this.Relatorio.TabIndex = 0;
-            this.Relatorio.SelectedIndexChanged += new System.EventHandler(this.TabChange);
             // 
             // tabPage1
             // 
@@ -84,7 +84,7 @@ namespace controlePagamentos
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(562, 246);
+            this.tabPage1.Size = new System.Drawing.Size(628, 246);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Alimentação";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -135,7 +135,6 @@ namespace controlePagamentos
             this.cpfA.Name = "cpfA";
             this.cpfA.Size = new System.Drawing.Size(139, 20);
             this.cpfA.TabIndex = 3;
-            this.cpfA.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -178,7 +177,7 @@ namespace controlePagamentos
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(562, 246);
+            this.tabPage2.Size = new System.Drawing.Size(628, 246);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Saúde";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -259,29 +258,40 @@ namespace controlePagamentos
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.comboBox1);
             this.tabPage3.Controls.Add(this.listView1);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(562, 246);
+            this.tabPage3.Size = new System.Drawing.Size(628, 246);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Relatório";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(11, 18);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(151, 21);
+            this.comboBox1.TabIndex = 2;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(6, 6);
+            this.listView1.Location = new System.Drawing.Point(198, 6);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(553, 234);
+            this.listView1.Size = new System.Drawing.Size(427, 234);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(570, 268);
+            this.ClientSize = new System.Drawing.Size(633, 268);
             this.Controls.Add(this.Relatorio);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -320,6 +330,7 @@ namespace controlePagamentos
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

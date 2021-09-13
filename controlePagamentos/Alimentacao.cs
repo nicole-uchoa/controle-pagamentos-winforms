@@ -11,6 +11,5 @@ namespace controlePagamentos
         public string descricao { get; set; }
         public double faturamento { get; set; }
 
-
     }
 }
